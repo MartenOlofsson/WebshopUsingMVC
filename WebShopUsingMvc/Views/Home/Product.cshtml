@@ -1,0 +1,31 @@
+﻿@using WebShop.DataCore.Models
+@model List<Product>
+@{
+    ViewBag.Title = "Produkter";
+}
+<div id="wrap">
+</div>
+<div id="toppart">
+    <h2>
+        Produkter</h2>
+    @foreach (var product in Model)
+    {
+
+        <div class="productsquares">
+            <h2>@product.Name</h2>
+            <img src="@product.Picture" alt = "Bild på produkt" />
+        </div>
+
+    }
+</div>
+<div id="bottompart">
+    <div class="ordersquares">
+        bild på sina produkter här
+    </div>
+    <div class="ordersquares">
+        bild på sina produkter här
+    </div>
+    <div class="ordersquares">
+        bild på sina produkter här
+    </div>
+</div>

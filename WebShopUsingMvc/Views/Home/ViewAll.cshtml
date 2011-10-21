@@ -1,0 +1,24 @@
+﻿@using WebShop.DataCore.Models
+@model List<Product>
+@{
+    ViewBag.Title = "Lista allt";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ViewAll</title>
+</head>
+<body>
+    <div>
+        @foreach (var product in Model)
+        {
+            @product
+        }
+            
+    </div>
+</body>
+</html>

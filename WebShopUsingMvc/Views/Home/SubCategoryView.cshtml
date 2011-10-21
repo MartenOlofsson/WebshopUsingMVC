@@ -1,0 +1,29 @@
+﻿@using WebShop.DataCore.Models
+@model Category
+@{
+    ViewBag.Title = "SubCategoryView";
+}
+@Html.ActionLink("StartSida", "Index", "Home") / @Html.ActionLink(@Model.Name, "SubcategoryView", "Home")
+<div id="subcategoryview">
+    @foreach (var subcategory in Model.ListOfSubCategories)
+    {
+        <strong>@subcategory.Name</strong><br />
+        <ul>
+
+            
+            <li>
+                <img src="@subcategory.ProductList[0].Picture" alt ="produkt" width =50px height = 50px />
+                @subcategory.ProductList[0].Name
+                Pris: <i>@subcategory.ProductList[0].Pris kr</i>
+               
+                
+                @Html.ActionLink("Lägg till i kundkorg", "SubCategoryView", "Home", new { productId = @subcategory.ProductList[0].Id }, new { name = @subcategory.ProductList[0].Name, id = @subcategory.ProductList[0].Id, @class = "trigger info-trigger" })
+                @Html.ActionLink("Se mer info", "ProductInfoView", "Home", new { productId = @subcategory.ProductList[0].Id }, null)
+            </li>
+        </ul>
+    }
+    <div class="info message">
+                    <h3>
+                        Kundkorgen är uppdaterad!</h3>
+                </div>
+</div>

@@ -1,0 +1,79 @@
+﻿@using WebShop.DataCore.Models
+@model List<Product>
+@{
+    ViewBag.Title = "Search";
+}
+@using (Html.BeginForm("Compare", "Home", FormMethod.Get))
+{
+ 
+    <div id="result">
+        <p>
+            Sökningen gav @Model.Count träffar</p>
+       
+    </div>
+   
+
+    <div id="maincolumn">
+     
+ 
+        <div class="border">
+        <input type="submit" id="Compare" value="Jämför" />
+            <table>
+              <tr>
+                        <td>
+                            Product
+                        </td>
+                        <td>
+                           
+                        </td>
+                        <td>
+                         Pris
+                        </td>
+                        <td>
+                             lager
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                @foreach (var product in Model)
+                {
+
+                    <tr>
+                        <td>
+                            <img src = "@product.Picture" alt ="produkt" height = 40px width= 40px; />
+                        </td>
+                        <td>
+                            <text>Benämning: </text>@product.Name
+                        </td>
+                        <td>
+                            <text>Pris: </text>
+                            @product.Pris
+                        </td>
+                        <td>
+                           @if (@product.NumberInStock > 20)
+                           {<img src="/Pictures/fullstock.png" alt="@product.Name"/>}
+
+                           else if (@product.NumberInStock > 10)
+                           {<img src="/Pictures/mediumstock.png" alt="@product.Name"/>}
+
+                           else
+                           {<img src="/Pictures/lowstock.png" alt="@product.Name"/>}
+                        </td>
+                        <td>
+                            @Html.ActionLink("JLägg i kundvagn", "AddProductToCartFromSearch", "Home", new { productId = product.Id }, new { name = product.Name, id = product.Id, @class = "trigger info-trigger" })
+                            @Html.ActionLink("Lägg i kundvagn", "AddProductToCartFromSearch", "Home", new { productId = product.Id }, new { name = product.Name, id = product.Id, @class = "cartAddLink" })
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Compare" value="@product.Id"/>
+                        </td>
+                    </tr>
+                }
+            </table>
+             
+        </div>
+    </div>
+}

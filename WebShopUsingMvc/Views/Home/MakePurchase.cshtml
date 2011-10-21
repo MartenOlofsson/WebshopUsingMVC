@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "MakePurchase";
+}
+
+
+@if (Request.IsAuthenticated)
+{
+  
+    
+    <h2>
+        Grattis @User.Identity.Name! Din order är nu på väg.</h2>
+
+      
+}
+else
+{
+    
+    <div id = "failed">
+    
+    @Html.ActionLink("Logga in ", "LogOn", "Account") För att lägga din order.
+    </div>
+}

@@ -1,0 +1,169 @@
+﻿@using WebShop.DataCore.Models
+@model List<Category>
+@{
+    ViewBag.Title = "Produkter";
+}
+<div id="productarea">
+    <div id="products">
+        <ul>
+            @foreach (var category in Model)
+            {
+        
+    
+                <li><a href="#">@category.Name</a>
+                    <div class="dropdown">
+                        <div class="leftproductarea">
+                            <ul>
+                                @foreach (var subcategory in category.ListOfSubCategories)
+                                {
+                                    <li><h2>@subcategory.Name</h2></li>
+
+                                        foreach (var product in subcategory.ProductList)
+                                        {
+                                           
+                                            <li><a href="http://localhost:64295/Home/SubCategoryView/1/ProductInfoView/@product.Id">@product.Name</a></li>
+                                        }
+
+                                   
+                                }
+                            </ul>
+       
+                        </div>
+                        <div class="rightproductarea">
+                            <p>
+                                KÖPGUIDE</p>
+                            <div id="numberpic">
+                                <ol>
+                                    <li><span>1</span></li>
+                                    <li><span>2</span></li>
+                                   <li><span>3</span></li>
+                                </ol>
+                            </div>
+                            <select>
+                                <option value="product">Produkt</option>
+                                <option value="test">Filtrering</option>
+                            </select>
+                            <select>
+                                <option value="product">Produkt</option>
+                                <option value="test">Filtrering</option>
+                            </select>
+                            <select>
+                                <option value="product">Produkt</option>
+                                <option value="test">Filtrering</option>
+                            </select>
+                             <input type="submit" value="Fortsätt"/>
+                        </div>
+                    </div>
+                </li>
+
+
+            }
+            @*
+        <li><a href="#">Product</a>
+            <div class="dropdown">
+                <div class="leftproductarea">
+                </div>
+                <div class="rightproductarea">
+                    KÖPGUIDE
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Product</a>
+            <div class="dropdown">
+                <div class="leftproductarea">
+                </div>
+                <div class="rightproductarea">
+                    KÖPGUIDE
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Product</a>
+            <div class="dropdown">
+                <div class="leftproductarea">
+                </div>
+                <div class="rightproductarea">
+                    KÖPGUIDE
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Product</a>
+            <div class="dropdown">
+                <div class="leftproductarea">
+                </div>
+                <div class="rightproductarea">
+                    KÖPGUIDE
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Product</a>
+            <div class="dropdown">
+                <div class="leftproductarea">
+                </div>
+                <div class="rightproductarea">
+                    KÖPGUIDE
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                    <select>
+                        <option value="product">Produkt</option>
+                        <option value="test">Filtrering</option>
+                    </select>
+                </div>
+            </div>
+        </li>*@
+        </ul>
+    </div>
+</div>

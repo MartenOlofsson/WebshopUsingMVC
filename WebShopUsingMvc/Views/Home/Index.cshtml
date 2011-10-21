@@ -1,0 +1,23 @@
+﻿@using WebShop.DataCore.Models
+@model List<Category>
+@{
+    ViewBag.Title = "Produkter";
+}
+<div id="wrap">
+</div>
+<div id="toppart" class="clearfix">
+    @foreach (var category in Model)
+    {
+    
+        <div class="productsquares">
+            <h2 class= @category.Class>@category.Name</h2>
+            <a href='@Url.Action("SubCategoryView", "Home", new { Id = category.Id })'>
+                <input type="image" src="@category.CategoryPicture" height= 100px width= 100px />
+            </a>
+        </div>
+
+    }
+</div>
+
+    @Html.Action("RenderCampaign", "Menu")
+

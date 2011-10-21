@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="BBBD2ADE-EAEA-4673-A926-8B6BBE93A518" ModuleId="WebShopUsingMvc" />
+  <Module PersistentId="D017EC33-9BD0-4F64-AA1B-B6BBD386A97A" ModuleId="WebShop.DataCore" />
+  <Module PersistentId="77CF0CAC-50B5-492A-A2E8-C4B3B2D434BF" ModuleId="consoleApp" />
+</Modules>

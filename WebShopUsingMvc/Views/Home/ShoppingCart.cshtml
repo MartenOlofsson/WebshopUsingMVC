@@ -1,0 +1,105 @@
+﻿@using WebShop.DataCore.Models
+@model DictionaryAndTotalpriceHolder
+@{
+    ViewBag.Title = "ShoppingCart";
+}
+<h2>
+    Varukorg</h2>
+<div id="carttable">
+    <table>
+        <tr>
+            <td>
+                Product
+            </td>
+            <td>
+                I lager
+            </td>
+            <td>
+                Antal
+            </td>
+            <td>
+                Pris
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+                Radtotal
+            </td>
+            <td>
+            </td>
+            <tr>
+                @foreach (var evennt in Model.dictionary.Keys)
+                {           
+                    <tr>
+                        <td>
+                            <img src="@evennt.Picture" alt="produkt" width="45px" height="45px" />
+                            @evennt.Name
+                        </td>
+                        <td>
+                        @if (@evennt.NumberInStock > 20)
+                        {<img src="/Pictures/fullstock.png" alt="@evennt.Name"/>}
+
+                        else if (@evennt.NumberInStock > 10)
+                        {<img src="/Pictures/mediumstock.png" alt="@evennt.Name"/>}
+
+                        else
+                        {<img src="/Pictures/lowstock.png" alt="@evennt.Name"/>}
+
+                        <td>
+                            @Model.dictionary[evennt].TotalAmount
+                        </td>
+                        <td>
+                            @evennt.Pris
+                        </td>
+                        <td>
+                            @Html.ActionLink("Öka", "AddProductToCartFromSearch", "Home", new { productId = evennt.Id }, null)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Minska", "RemoveProductFromCart", "Home", new { Id = evennt.Id }, null)
+                        </td>
+                        <td>
+                            RadTotal: @Model.dictionary[evennt].TotalPrice kr
+                        </td>
+                        <td>
+                            <a href='@Url.Action("RemoveRowFromCart", "Home", new { productId = evennt.Id, amount = Model.dictionary[evennt].TotalAmount }, null)'>
+                                <input type="image" src="/Pictures/button_remove.gif" />
+                            </a>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                }
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+               
+                    @if (Model.Amount > 0)
+                    {<strong>Totalpris:@Model.Amount</strong>}
+                
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="foot">
+    Spara min varukorg
+    <input type="text" size="25" value="Spara som?">
+    <input type="button" id="Tryck" value="Save" />
+    @Html.ActionLink("Lägg order", "MakePurchase", "Home")
+</div>

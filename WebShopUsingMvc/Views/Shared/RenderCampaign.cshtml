@@ -1,0 +1,26 @@
+﻿@using WebShop.DataCore.Models
+@model List<ProductsOnCampaign>
+@{
+    ViewBag.Title = "Produkter";
+}
+<div id="specialoffers" class="clearfix">
+    @foreach (var campaign in Model)
+    {
+         
+        <div class="ordersquares">
+            <a href='@Url.Action("ProductInfoView", "Home", new { productId = @campaign.Product.Id }, null)'>
+                <input type="image" src="@campaign.Product.Picture" alt="Produkt" width=100px height=100px/><br />
+            </a>Ord Pris @campaign.Product.Pris Kr
+            <h2 class="red">
+                @campaign.CampaginPrice kr
+            </h2>
+            Köp idag betala imorgon!
+        </div>
+        
+        
+    }
+    <div id="ordersandsearch">
+        @Html.Action("RenderOrders", "Menu")
+        @Html.Action("RenderOldSearch", "Menu")
+    </div>
+</div>

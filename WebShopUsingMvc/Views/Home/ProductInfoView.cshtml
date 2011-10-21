@@ -1,0 +1,104 @@
+﻿@using WebShop.DataCore.Models
+@model Product
+@{
+    ViewBag.Title = "ProductInfoView";
+}
+@Html.ActionLink("StartSida", "Index", "Home") / @Html.ActionLink("Subcategory", "SubcategoryView", "Home", new { productId = @Model.Id })/
+@Html.ActionLink(@Model.Name, "ProductInfoView", "Home")
+<div id="productinfo" class="clearfix">
+    <div id="productinfopicturebox">
+        <img src = "@Model.Picture" alt="produkt" />
+    </div>
+    <div id="infoaboutproduct">
+        <h2>@Model.Name @Model.Brand</h2>
+        <p>
+            Här finns en kort beskrivning om produkten.
+            <br />
+            Olibris Cum. Här står det lite mer.</p>
+    </div>
+    <div id="buy">
+        @using (Html.BeginForm("AddManyProductsToCart", "Home", FormMethod.Post))
+        {
+
+            <div id="nameandpic" class="clearfix">
+                <div id="pic">
+                    @if (@Model.NumberInStock > 20)
+                    {<img src="/Pictures/fullstock.png" alt="@Model.Name"/>}
+                    else if (@Model.NumberInStock > 10)
+                    {<img src="/Pictures/mediumstock.png" alt="@Model.Name"/>}
+                    else
+                    {<img src="/Pictures/lowstock.png" alt="@Model.Name"/>}
+                </div>
+                <div id="name">
+                    <p>@Model.Pris kr</p>
+                </div>
+            </div>      
+            <input type="text" value="0" name="amount" />
+           
+            <input type="hidden" value="@Model.Id" name="id" />
+            <input type="submit" value="köp" />
+                 
+     
+                    
+        }
+    </div>
+</div>
+<div id="secondhalfofinfopage" class="clearfix">
+    <div id="overview">
+        <table>
+            <tr>
+                <td>
+                    <h3>
+                        Översikt</h3>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <strong>olbris cumsius</strong> olbris cumsius
+                    <br />
+                    olbris cumsius
+                </td>
+                <td>
+                    <strong>olbris cumsius</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    olbris cumsius
+                </td>
+                <td>
+                    <strong>olbris cumsius</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    olbris cumsius
+                </td>
+                <td>
+                    <strong>olbris cumsius</strong>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="document">
+        <h3>
+            Doukument</h3>
+        <ul>
+            <h3>
+                olibris cum</h3>
+            <li><a href="#">Donec eu sem est. Donec</a> </li>
+            <li><a href="#">Pellentesque non felis eu velit pulvinar</a> </li>
+            <li><a href="#">pulvinar iaculis id</a> </li>
+        </ul>
+        <ul>
+            <h3>
+                olibris cum</h3>
+            <li><a href="#">Curabitur in augue in orci ornare </a></li>
+            <li><a href="#">Donec et mollis turpis. Aliquam velk</a> </li>
+            <li><a href="#">Suspendisse potenti.</a> </li>
+        </ul>
+    </div>
+</div>

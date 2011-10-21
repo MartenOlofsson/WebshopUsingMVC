@@ -1,0 +1,37 @@
+﻿@using WebShop.DataCore.Models
+@model List<Category>
+
+@{
+    ViewBag.Title = "ListAllProduct";
+}
+
+
+
+
+<h2>ListAllProduct</h2>
+    <div>
+        <ul>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <li>
+                    <h2>@Model[i].Name</h2>
+                </li>
+                
+                for (int j = 0; j < Model[i].ListOfSubCategories.Count; j++) 
+                {
+                <li><strong>@Model[i].ListOfSubCategories[j].Name</strong></li>
+                    
+                    foreach (var product in Model[i].ListOfSubCategories[j].ProductList)
+                    {
+                <li>
+                <input class="prodIdContainer" value="@product.Id" type="hidden" />
+                Namn: @product.Name Pris: @product.Pris Märke: @product.Brand Antal i Lager: @product.NumberInStock @Html.ActionLink("Lägg i kundvagn", "AddProductToCart", "Home", new { productId = product.Id}, new { @class = "cartAddLink" })
+                </li> 
+                
+                    }
+                }
+            }
+        </ul>
+    </div>
+
+    

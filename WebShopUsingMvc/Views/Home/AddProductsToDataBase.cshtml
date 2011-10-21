@@ -1,0 +1,13 @@
+﻿@using WebShop.DataCore.Models
+@model List<Product>
+           
+
+@{
+    ViewBag.Title = "AddProductsToDataBase";
+}
+
+<h2>Addproducts</h2>
+@foreach (var product in Model)
+{
+    @product.Name <br />
+}

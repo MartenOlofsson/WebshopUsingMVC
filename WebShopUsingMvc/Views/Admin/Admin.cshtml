@@ -1,0 +1,10 @@
+﻿@model WebShop.DataCore.Models.Category
+@{
+    ViewBag.Title = "Admin";
+}
+<h2>
+    Admin</h2>
+<ul id="menu">
+    <li>@Html.ActionLink("lägg till categorier", "AddCategories", "Home")</li>
+    <li>@Html.ActionLink("Lista alla produkter", "ListAllProduct", "Home")</li>
+</ul>

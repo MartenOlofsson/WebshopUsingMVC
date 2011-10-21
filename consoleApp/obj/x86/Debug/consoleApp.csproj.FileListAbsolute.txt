@@ -1,0 +1,16 @@
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\consoleApp.exe
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\consoleApp.pdb
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\Castle.Core.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\FluentNHibernate.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\Iesi.Collections.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\NHibernate.ByteCode.Castle.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\NHibernate.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\WebShop.DataCore.dll
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\WebShop.DataCore.pdb
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\Castle.Core.xml
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\FluentNHibernate.pdb
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\Iesi.Collections.pdb
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\bin\Debug\NHibernate.ByteCode.Castle.xml
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\obj\x86\Debug\consoleApp.exe
+c:\users\marten.olofsson\documents\visual studio 2010\Projects\WebShopUsingMvc\consoleApp\obj\x86\Debug\consoleApp.pdb

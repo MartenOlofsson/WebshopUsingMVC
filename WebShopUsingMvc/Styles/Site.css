@@ -1,0 +1,886 @@
+﻿body
+{
+    color: gray;
+    background-color: wheat;
+    width: 1050px;
+    border: none;
+    margin: 0px auto;
+    height: 1000px;
+}
+
+#wrapall
+{
+    position: relative;
+    width: 1050px; /*background-image: url("/Pictures/shadows/left.png");*/
+    background-image: url("/Pictures/fetbakgrund.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#header
+{
+    background: white;
+    width: 950px;
+    margin: 0px auto;
+    height: 100px;
+}
+#logga
+{
+    float: left;
+}
+
+#trolley
+{
+    width: 117px;
+    height: 30px;
+    color: black;
+    background-color: #6A9D37;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98cb65), to(#679a34)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #98cb65, #679a34); /* New Chrome */
+    background: -moz-linear-gradient(top, #98cb65, #679a34); /* Firefox */
+    background: -ms-linear-gradient(top, #98cb65, #679a34); /* IE */
+    background: -o-linear-gradient(top, #98cb65, #679a34); /* Opera */
+}
+#trolleytext
+{
+    float: left;
+    margin-left: 6px;
+    margin-top: 7px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+#trolleypic
+{
+    float: right;
+    margin-right: 13px;
+    margin-top: 7px;
+}
+
+
+
+
+#login
+{
+    width: 230px;
+    height: 30px;
+    color: white;
+    background-color: #666666;
+    float: left;
+    margin-right: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#welcometext
+{
+    font-family: helvetica;
+    margin-top: -7px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+#welcometext a
+{
+    color: white;
+    font-family: helvetica;
+    margin-top: -7px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+
+#rubrik
+{
+    margin-left: 108px;
+    float: left;
+    color: #6A9D37;
+    position: absolute;
+    font-weight: bold;
+}
+
+
+#productarea
+{
+    background: #999999;
+    background-color: gray;
+    color: white;
+    width: 950px;
+    margin-left: 52px;
+    font-weight: bold;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+
+#searchfield
+{
+    width: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 47px;
+}
+
+#searchfield input
+{
+    width: 350px;
+    border-radius: 5px 5px 5px 5px;
+}
+#searchbutton #firstsearch
+{
+    background-image: url("/Pictures/camera.png");
+    background-color: green;
+}
+
+#searchbutton
+{
+    width: 20px;
+    float: left;
+    margin-left: 360px;
+    margin-top: 42px;
+    width: 30px;
+    height: 30px; /*   border: 0;   background: transparent url("/Pictures/kundkorg.png") no-repeat center top;   text-indent: -1000em;   cursor: pointer;  hand-shaped cursor */
+}
+
+
+#products
+{
+    height: 32px;
+    color: black;
+    background-color: #F4F4F4;
+    width: 895px;
+    margin-left: 27px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#products > ul > li:hover a
+{
+    background-color: white;
+}
+
+#products > a
+{
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+}
+
+#products .leftproductarea a
+{
+    border: none;
+}
+
+#products .leftproductarea li
+{
+    list-style: none;
+}
+
+
+#products ul
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#products ul li div.dropdown
+{
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    height: 250px;
+    background-color: white;
+    display: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #CCCCCC;
+    top: 140px;
+    left: 105px;
+    margin-right: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+#products ul li:hover div.dropdown
+{
+    display: block;
+}
+#products > ul > li:hover
+{
+    background-color: white;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    padding-top: 10px;
+}
+
+.rightproductarea p
+{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.rightproductarea select
+{
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 85px;
+    position: relative;
+}
+
+
+
+#products .leftproductarea li
+{
+    float: none;
+}
+
+#products .leftproductarea .blocklist li
+{
+    display: block;
+}
+
+
+
+
+#products > ul > li
+{
+    list-style: none;
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid white;
+}
+
+#products > ul > li:first-child
+{
+}
+#products > ul > li:first-child
+{
+}
+
+.leftproductarea
+{
+    width: 400px;
+    height: 230px;
+    color: black;
+    float: left;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+.rightproductarea
+{
+    background-color: #333333;
+    width: 260px;
+    height: 230px;
+    color: white;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+}
+.rightproductarea ol
+{
+    position: absolute;
+}
+
+.rightproductarea > input
+{
+    top: 195px;
+    right: 93px;
+    background-color: white;
+    position: absolute;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98cb65), to(#679a34)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #98cb65, #679a34); /* New Chrome */
+    background: -moz-linear-gradient(top, #98cb65, #679a34); /* Firefox */
+    background: -ms-linear-gradient(top, #98cb65, #679a34); /* IE */
+    background: -o-linear-gradient(top, #98cb65, #679a34); /* Opera */
+    border-radius: 4px;
+}
+
+#numberpic ol li
+{
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 20px;
+    margin-right: 150px;
+    float: none;
+    list-style: armenian;
+}
+
+#numberpic > ol > li > span
+{
+    margin: 0px 0px 0px 8px;
+}
+
+#categories
+{
+    background-color: #F4F4F4;
+    color: black;
+    margin: 0px auto;
+    width: 950px;
+    margin-top: 0px;
+    border-top: 2px solid white;
+    border-left: 1px;
+    border-right: 1px;
+}
+
+
+
+
+
+#footer
+{
+    background-color: #999999;
+    background: #0f0;
+    clear: both;
+    width: 100%;
+}
+
+#thefooter
+{
+    border-top: 8px solid #999999;
+    width: 950px;
+    background-color: #EEEEEE;
+    margin: 0px auto;
+}
+#thefooter ul
+{
+    width: 180px;
+    float: left;
+    color: black;
+}
+
+#thefooter li
+{
+    list-style: none;
+}
+
+
+
+/* Här ligger CSS för vyn över produktsidan/startsidan */
+
+
+#toppart
+{
+    width: 950px;
+    background-color: #F4F4F4;
+    border-left: 1px solid white;
+    border-top: 2px solid white;
+    border-right: 1px solid white;
+}
+#bottompart
+{
+}
+
+.productsquares
+{
+    width: 260px;
+    height: 180px;
+    background-color: white;
+    color: greenyellow;
+    border: 2px solid grey;
+    border-radius: 10px;
+    float: left;
+    margin: 25px;
+}
+
+
+
+.productsquares:hover
+{
+    border: 2px solid greenyellow;
+}
+
+.productsquares input
+{
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
+}
+
+#bottompart
+{
+    background-color: white;
+}
+
+.ordersquares
+{
+    width: 210px;
+    height: 210px;
+    border: 2px solid #EEEEEE;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+/* Här ligger CSS för vyn varukorgssidan */
+
+#theheader
+{
+    background-color: #999999;
+    width: 890px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* Här ligger vyn för söksidan*/
+
+
+
+#result
+{
+    width: 100%;
+    float: left;
+}
+
+.border > input
+{
+    float: right;
+    margin-right: 20px;
+    border-radius: 4px 4px 4px 4px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98cb65), to(#679a34)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #98cb65, #679a34); /* New Chrome */
+    background: -moz-linear-gradient(top, #98cb65, #679a34); /* Firefox */
+    background: -ms-linear-gradient(top, #98cb65, #679a34); /* IE */
+    background: -o-linear-gradient(top, #98cb65, #679a34); /* Opera */
+}
+
+
+
+#maintop
+{
+    float: left;
+    width: 100%;
+    background-color: #999999;
+    border-radius: 5px 5px 0px 0px;
+    height: 30px;
+}
+
+#maincolumn
+{
+    width: 500px;
+    margin-left: 300px;
+}
+
+#leftcolumntop
+{
+    width: 200px;
+    float: left;
+    background-color: #999999;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.border td
+{
+    border-bottom: 2px solid #CECECE;
+}
+.border table
+{
+    border-collapse: collapse;
+}
+.border tr:first-child
+{
+    background-color: grey;
+}
+.border tr:last-child
+{
+    border-bottom: 2px solid #CECECE;
+}
+#leftcolumn
+{
+    position: absolute;
+    margin-left: 20px;
+    width: 200px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+h2.green
+{
+    color: #89BA17;
+}
+h2.purple
+{
+    color: #7B0664;
+}
+h2.orange
+{
+    color: #F18900;
+}
+h2.darkgreen
+{
+    color: #00635F;
+}
+h2.lightblue
+{
+    color: #3EBDDD;
+}
+h2.blue
+{
+    color: #2C67BE;
+}
+h2.red
+{
+    color: red;
+}
+
+
+#carttable table
+{
+    width: 830px;
+    margin-left: 35px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+
+#carttable table td
+{
+    border-bottom: 2px solid grey;
+    padding: 0px;
+    margin: 2px;
+}
+
+#carttable table td:last-child
+{
+    border-bottom: none;
+}
+#carttable table tr:first-child
+{
+    background-color: gray;
+    border: none;
+}
+
+#specialoffers
+{
+    width: 100%;
+    background-color: white;
+}
+
+#infocolumn
+{
+    border: 1px solid grey;
+    width: 100px;
+}
+
+/*test här för att göra en ny meny*/
+
+
+#subcategoryview
+{
+    padding: 20px;
+}
+
+#subcategoryview li
+{
+    list-style: none;
+}
+
+#orders ul li
+{
+    list-style: none;
+}
+
+/*Här är css för produktsidan*/
+
+.clearfix:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#productinfo
+{
+    border-radius: 4px;
+    margin: 10px 20px 20px 10px;
+    height: 230px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE); /* New Chrome */
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE); /* Firefox */
+    background: -ms-linear-gradient(top, #FFFFFF, #EEEEEE); /* IE */
+    background: -o-linear-gradient(top, #FFFFFF, #EEEEEE); /* Opera */
+}
+
+#buy
+{
+    width: 140px;
+    height: 140px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #E7E4E4;
+    margin: 44px 0px 0px 165px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7F7F7), to(#F1F1F1)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #F7F7F7, #F1F1F1); /* New Chrome */
+    background: -moz-linear-gradient(top, #F7F7F7, #F1F1F1); /* Firefox */
+    background: -ms-linear-gradient(top, #F7F7F7, #F1F1F1); /* IE */
+    background: -o-linear-gradient(top, #F7F7F7, #F1F1F1); /* Opera */
+}
+
+#buy input
+{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 10px 57px;
+    position: absolute;
+}
+
+#buy input:last-child
+{
+    width: 35px;
+    height: 20px;
+    margin-top: 49px;
+    margin-left: 52px;
+    border-radius: 4px 4px 4px 4px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98cb65), to(#679a34)); /*Old Chrome */
+    background: -webkit-linear-gradient(top, #98cb65, #679a34); /* New Chrome */
+    background: -moz-linear-gradient(top, #98cb65, #679a34); /* Firefox */
+    background: -ms-linear-gradient(top, #98cb65, #679a34); /* IE */
+    background: -o-linear-gradient(top, #98cb65, #679a34); /* Opera */
+}
+
+
+#productinfopicturebox
+{
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 15px 0px 0px 15px;
+}
+
+#productinfopicturebox img
+{
+    width: 200px;
+    height: 200px;
+}
+
+#infoaboutproduct
+{
+    float: left;
+    width: 350px;
+    margin: 30px 0px 0px 30px;
+}
+
+#infoaboutproduct p
+{
+    border-top: 1px solid #DEDEDE;
+}
+
+#ordersandsearch
+{
+    border: 1px solid #EEEEEE;
+    background-color: white;
+    float: left;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#foot
+{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#foot a
+{
+    margin-left: 350px;
+}
+
+
+
+#searches table tr:first-child
+{
+    background-color: grey;
+    height: 20px;
+}
+#searches table
+{
+    width: 100%;
+}
+#searches table tr td a
+{
+    margin-left: 100px;
+}
+#orders table tr:first-child
+{
+    background-color: grey;
+    height: 20px;
+}
+#orders table
+{
+    width: 100%;
+}
+#main
+{
+    background-color: white;
+}
+#main h2
+{
+    margin-left: 40px;
+    padding: 0;
+    margin: 0px 0px 20px 10px;
+}
+#secondhalfofinfopage
+{
+    background-color: white;
+}
+#document ul li
+{
+    list-style-image: url("/Pictures/arrow.png");
+}
+#document
+{
+    float: left;
+    width: 320px;
+    border: 2px solid #E7E4E4;
+    margin: 30px 25px 30px 38px;
+    border-radius: 5px;
+}
+#document > h3
+{
+    margin-left: 20px;
+}
+#overview
+{
+    float: left;
+    width: 500px;
+    height: 250px;
+    margin: 50px 20px 10px 40px;
+}
+#overview table tr td
+{
+    border-bottom: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+
+#overview table
+{
+    border-collapse: collapse;
+    margin: 5px 5px 5px 5px;
+}
+
+.comparetable table tr td
+{
+    border: 1px solid black;
+}
+.comparetable
+{
+    float: left;
+}
+.comparetable table
+{
+    border-collapse: collapse;
+}
+
+#pic
+{
+    float: left;
+    width: 30px;
+    margin: 22px 0px 10px 24px;
+}
+#name
+{
+    float: left;
+    width: 10px;
+    height: 20px;
+    margin: 5px 0px 0px 0px;
+}
+
+#products .dropdown .leftproductarea ul li
+{
+    padding: 0;
+    background-color: transparent;
+}
+
+
+
+
+/* free*/
+.message
+{
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    background-size: 40px 40px;
+    background-image: -webkit-gradient(linear, left top, right bottom,                                                         color-stop(.25, rgba(255, 255, 255, .05)), color-stop(.25, transparent),                                                         color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .05)),                                                         color-stop(.75, rgba(255, 255, 255, .05)), color-stop(.75, transparent),                                                         to(transparent));
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,                                                         transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,                                                         transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,                                                         transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,                                                         transparent 75%, transparent);
+    background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,                                                         transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,                                                         transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,                                                         transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,                                                         transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,                                                         transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,                                                         transparent 75%, transparent);
+    -moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    _position: absolute;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    -webkit-animation: animate-bg 5s linear infinite;
+    -moz-animation: animate-bg 5s linear infinite;
+    margin-left: 892px;
+    
+}
+
+.info
+{
+    background-color:white;
+    border-color: lightgray;
+    color: red;
+}
+
+.error
+{
+    background-color: #de4343;
+    border-color: #c43d3d;
+}
+
+.warning
+{
+    background-color: #eaaf51;
+    border-color: #d99a36;
+}
+
+.success
+{
+    background-color: #61b832;
+    border-color: #55a12c;
+}
+
+.message h3
+{
+    margin: 0 0 5px 0;
+}
+
+.message p
+{
+    margin: 0;
+}
+
